@@ -26,3 +26,7 @@ Route::get('/devices', function () {
 Route::get('/logs', function () {
     return view('logs');
 });
+ 
+Route::get('/profile', function () {
+    return view('profile');
+});
