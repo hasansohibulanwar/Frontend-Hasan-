@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devices</title>
+    <title>User Profile</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <style>
         .navbar {
             background-color: #ffc107 !important; /* Warna kuning */
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -27,11 +34,14 @@
       <li class="nav-item">
         <a class="nav-link" href="/dashboard">Home</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/devices">Devices <span class="sr-only">(current)</span></a> <!-- Tautan Devices -->
+      <li class="nav-item">
+        <a class="nav-link" href="/devices">Devices</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/logs">Logs</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/profile">Profile <span class="sr-only">(current)</span></a> <!-- Tautan Profile -->
       </li>
     </ul>
   </div>
@@ -39,39 +49,21 @@
 
 <!-- Main Content -->
 <div class="container mt-5">
-    <h2>Devices</h2>
-    <p>Here you can view the list of devices.</p>
-    
-    <!-- Device Table -->
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Device Name</th>
-                <th>Minimum Value</th>
-                <th>Maximum Value</th>
-                <th>Current Value</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Example Device Data -->
-            <tr>
-                <td>1</td>
-                <td>Device 1</td>
-                <td>0</td>
-                <td>100</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Device 2</td>
-                <td>20</td>
-                <td>80</td>
-                <td>35</td>
-            </tr>
-            <!-- Add your device data dynamically here -->
-        </tbody>
-    </table>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="text-center">
+                <img src="https://picsum.photos/150" alt="Profile Picture" class="profile-image">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">hasan sohibul anwar</h5>
+                    <p class="card-text">Email: aresuma307@gmail.com</p>
+                    <p class="card-text">Location: New York</p>
+                    <a href="#" class="btn btn-primary">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Bootstrap JS -->

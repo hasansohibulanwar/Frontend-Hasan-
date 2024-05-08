@@ -41,7 +41,31 @@
 <div class="container mt-5">
     <h2>Logs</h2>
     <p>Here you can view the logs data.</p>
-    <!-- Add your log data here -->
+    
+    <!-- Logs Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Time</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Log Data -->
+            <tr>
+                <td>1</td>
+                <td>2024-05-01 12:00:00</td>
+                <td>Log data 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2024-05-02 13:00:00</td>
+                <td>Log data 2</td>
+            </tr>
+            <!-- Add your log data dynamically here -->
+        </tbody>
+    </table>
 </div>
 
 <!-- Bootstrap JS -->

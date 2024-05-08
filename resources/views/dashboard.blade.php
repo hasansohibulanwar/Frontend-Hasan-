@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Tugas HASAN SOHIBUL ANWAR IOT 2</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Custom CSS -->
     <style>
         .navbar {
@@ -17,7 +19,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand text-white" href="#">Dashboard</a>
+  <a class="navbar-brand text-white" href="#"> IOT 2 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,6 +36,10 @@
         <a class="nav-link text-white" href="/logs">Logs</a> <!-- Tautan ke halaman Logs -->
       </li>
     </ul>
+    <!-- Icon untuk tampilan profil -->
+    <a href="/profile" class="text-white">
+        <i class="fas fa-user-circle fa-lg"></i>
+    </a>
   </div>
 </nav>
 
